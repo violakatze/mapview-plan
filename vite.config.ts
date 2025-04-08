@@ -7,9 +7,9 @@ import svgr from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig(() => {
   return {
-    server: {
-      port: 5173
-    },
+    // server: {
+    //   port: 8080
+    // },
     resolve: {
       alias: [{ find: '@', replacement: '/src' }]
     },
