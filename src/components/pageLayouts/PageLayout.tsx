@@ -6,7 +6,6 @@ import { Header } from './Header'
  * 画面レイアウト
  */
 export const PageLayout = () => {
-
   return (
     <>
       <Header />
