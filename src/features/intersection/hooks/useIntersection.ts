@@ -4,7 +4,7 @@ import { getDefaultValues, Intersection, IntersectionSchema } from '../types'
 
 export const useIntersection = () => {
   const values = getDefaultValues()
-  const form = useForm<Intersection>({values, defaultValues: values})
+  const form = useForm<Intersection>({ values, defaultValues: values })
 
   return {
     form
