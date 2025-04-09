@@ -7,9 +7,6 @@ import svgr from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig(() => {
   return {
-    // server: {
-    //   port: 8080
-    // },
     base: '/mapview-plan/',
     resolve: {
       alias: [{ find: '@', replacement: '/src' }]
