@@ -10,6 +10,7 @@ export default defineConfig(() => {
     // server: {
     //   port: 8080
     // },
+    base: '/mapview-plan/',
     resolve: {
       alias: [{ find: '@', replacement: '/src' }]
     },

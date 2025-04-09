@@ -12,7 +12,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   return (
     <Suspense fallback={<div>loading</div>}>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <BrowserRouter>
+        <BrowserRouter basename='/mapview-plan/'>
           <ThemeProvider theme={theme}>
             <CssBaseline />
             {children}
