@@ -91,7 +91,7 @@ export const Page = () => {
 
 const styles = {
   shapeStack: {
-    width: { xs: '100%', md: '40%' },
+    width: { xs: '100%', md: '60%', lg: '50%', xl: '40%' },
     p: 1,
     border: '1px solid #ccc',
     borderRadius: 2
