@@ -22,6 +22,7 @@ const PaperComponent = (props: PaperProps) => {
 
 /**
  * DraggableDialog component
+ * @description 現実装内容が次のメジャーバージョンで削除されるという警告が出る
  */
 export const DraggableDialog = (props: DraggableDialogProps) => {
   const { open, onClose, title, icon, children, width = 'md' } = props

@@ -1,5 +1,6 @@
 export { GroupBox } from './containers/GroupBox'
 export { DraggableDialog } from './dialogs/DraggableDialog'
+export { SelectList } from './forms/SelectList'
 export { TextBox } from './forms/TextBox'
 export { Map } from './maps/Map'
 export { PageLayout } from './pageLayouts/PageLayout'
