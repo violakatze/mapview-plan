@@ -14,7 +14,7 @@ export const DialogButton = () => {
         onClick={() => setOpen(true)}
         sx={styles.buttonContainer}
       >
-        地図を表示する 案2 ダイアログ
+        地図を表示する 案2 ポップアップ
       </Button>
       <DraggableDialog open={open} onClose={() => setOpen(false)} title="地図表示" width="xl">
         <Stack spacing={2} sx={{ width: '100%' }}>
@@ -32,6 +32,6 @@ export const DialogButton = () => {
 
 const styles = {
   buttonContainer: {
-    width: { xs: '30ch' }
+    width: { xs: '35ch' }
   }
 }
