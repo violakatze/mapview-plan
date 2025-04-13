@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import {
   Accordion,
   AccordionDetails,
@@ -22,6 +23,7 @@ export const Page = () => {
   const {
     form: { control, handleSubmit }
   } = useIntersection()
+  const navigate = useNavigate()
 
   return (
     <Stack spacing={2}>
@@ -33,15 +35,27 @@ export const Page = () => {
           <MapView />
         </AccordionDetails>
       </Accordion>
-      <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
-        <TextBox
-          control={control}
-          name="current"
-          label="当該番号"
-          size="small"
-          sx={{ width: '15ch' }}
-        />
-        <DialogButton />
+      <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} justifyContent="space-between">
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
+          <TextBox
+            control={control}
+            name="current"
+            label="当該番号"
+            size="small"
+            sx={{ width: '15ch' }}
+          />
+          <DialogButton />
+        </Stack>
+        <Stack justifyContent="right">
+          <Button
+            variant="contained"
+            color="cancel"
+            onClick={() => navigate('subpage')}
+            sx={{ width: '15ch' }}
+          >
+            (旧)地図表示
+          </Button>
+        </Stack>
       </Stack>
       <SelectList
         control={control}

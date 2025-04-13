@@ -5,6 +5,10 @@ import * as hooks from '../hooks'
 import * as types from '../types'
 
 vi.mock('../hooks')
+vi.mock('react-router-dom', () => ({
+  ...vi.importActual('react-router-dom'),
+  useNavigate: vi.fn()
+}))
 
 describe('page, tests', () => {
   test('初期表示1', async () => {
